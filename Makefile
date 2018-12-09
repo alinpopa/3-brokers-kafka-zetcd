@@ -11,7 +11,4 @@ run:
 
 stop:
 	@echo "KAFKA_HOST: $(KAFKA_HOST)"
-	-docker-compose stop kafka1
-	-docker-compose stop kafka2
-	-docker-compose stop kafka3
-	-docker-compose stop zookeeper
+	-docker-compose stop kafka1 kafka2 kafka3 zetcd etcd
